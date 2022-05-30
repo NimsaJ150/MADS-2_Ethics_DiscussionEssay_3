@@ -1,0 +1,51 @@
+%! Author = jasmincapka
+%! Date = 31.03.22
+
+% Preamble
+\documentclass[11pt, a4paper]{article}
+\usepackage[english]{babel}
+
+\usepackage[top=25mm, bottom=20mm, vmargin=25mm, includehead]{geometry} % Document Margins
+\setlength{\topmargin}{0cm}
+\setlength{\parindent}{5mm}
+\setlength{\parskip}{2mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\oddsidemargin}{0mm}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[toc,page]{appendix}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{graphicx}
+
+\PassOptionsToPackage{
+    natbib=true,
+    style=apa,
+    hyperref=true,
+    backend=biber,
+    maxbibnames=99,
+    firstinits=false,
+    maxcitenames=2,
+    parentracker=true
+}{biblatex}
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+% Document
+\begin{document}
+
+    \title{Discussion Essay 2:\\Fairness and Justice}
+    \author{Jasmin Čapka}
+
+    \pagenumbering{arabic}
+    \maketitle
+
+    \input{sections/content}
+
+    \newpage
+    \printbibliography
+
+\end{document}
