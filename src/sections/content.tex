@@ -1,24 +1,24 @@
 %! Author = jasmincapka
 %! Date = 31.03.22
 
-This discussion focuses on the argument of~\cite{vredenburgh} that the discussion of algorithmic bias should not focus on fairness, but on justice.
+This discussion focuses on the thesis of~\cite{vredenburgh} that the discussion of algorithmic bias should not focus on fairness, but on justice.
+In this context, algorithmic bias which means the "deviation of an algorithm’s performance from what is required by some standard"~\parencite[][1]{vredenburgh} is treated in a moral sense.
+In that it signifies "the encoding of wrongfully discriminatory social patterns into an algorithm"~\parencite[][2]{vredenburgh}.
 
-Algorithmic bias: "deviation of an
-algorithm’s performance from what is required by some standard"~\parencite[][1]{vredenburgh}
-moral sense
-"the encoding of wrongfully discriminatory social patterns into an
-algorithm"~\parencite[][2]{vredenburgh}
+\section*{Definition of ``justice" and ``fairness" }
 
-\section*{Explain, in your own words and using your own examples, what she means by “fairness” and “justice”}
-
-Justice
-- moral norms that govern our most fundamental institution
+According to~\cite[3, 11--12]{vredenburgh}, justice are the moral norms that govern our most fundamental institutions, for example norms of distribution and respect.
+This means, justice describes moral commitments about how society’s key institutions ought to treat people
 - "moral norms that govern our basic societal institutions, including norms of distribution and norms of respect"~\parencite[][3]{vredenburgh}
 - "term that encapsulates a number of moral commitments about how society’s key institutions ought to treat people"~\parencite[][11]{vredenburgh}
 - "moral standards that ought to structure major societal institutions, such as legal, political, and economic institutions"~\parencite[][11]{vredenburgh}
 - "standards determine people’s obligations, entitlements, opportunities, and burdens"~\parencite[][12]{vredenburgh}
 - "shape people’s life trajectories, as well as their ideas about justice"~\parencite[][12]{vredenburgh}
-- Example!!!
+- Example
+  - government (BaföG)
+  - moral norm of equal opportunity for education regardless of individual background
+  - raises/fosters awareness with people -> everyone deserves the same education
+  - [Einzelfallbehandlung] is not fully implemented as a norm for total equality for chance of education
 
 
 "Fairness is one of the moral values that ought to shape our basic societal institution, but it is not the only value of justice"~\parencite[][3]{vredenburgh}
@@ -32,7 +32,9 @@ Fairness
 - "Reasons of fairness are grounded in the moral equality of people."~\parencite[][13]{vredenburgh}
 - "Thus, fairness is a matter of proportional equality, or giving people their due relative to what is owed to them."~\parencite[][13]{vredenburgh}
 - "A fair outcome is a distribution of resources, material or not, that respects people’s claims"~\parencite[][13]{vredenburgh}
-- Example!!!
+- Example
+  - BaföG is not 100 percent just in that it does not offer equal chances through missing [Einzelfallbehandlung]
+  - However, with BaföG, the justificial norm is thoroughly implemented, meaning it might not be just but it is fair due to the explicit implementation
 
 "Fairness is a central moral concept in our thinking about justice and AI"~\parencite[][13]{vredenburgh}
 "However, it is not the only moral concern one might have"~\parencite[][13]{vredenburgh}
@@ -40,25 +42,96 @@ Fairness
 \section*{reconstruct her arguments for her thesis}
 
 Thesis: The important dimension for moral evaluation of algorithms is justice, not fairness.
-Fairness w/o justice has no value
+
+
+Base:
+- different technical interventions -> different values of justice~\parencite[][18]{vredenburgh}
+- tradeoff between fairness and other values of justice possible~\parencite[][18]{vredenburgh}
+
+Arguments:
+- not always trade-off
+  - "fairness has no value in situations of serious and pervasive injustice" ~\parencite[][18]{vredenburgh}
+  - "Fairness depends on other standards of justice, because these other standards are necessary to determine which cases are alike, from a moral perspective" ~\parencite[][18]{vredenburgh}
+  - "question of fairness whether institutions respect those claims, given what other standards of justice have fixed them to be"~\parencite[][19]{vredenburgh}
+
+Claim: "If the contexts in which AI is designed and deployed are seriously unjust, then one must prioritize other values of justice over fairness."
+
+Arguments:
+-> Fairness does not exist without justice~\parencite[][19]{vredenburgh}
+  - "value of fairness depends on the existence of just institutions in the background."~\parencite[][19]{vredenburgh}
+  - "fairness is an important value of justice because people have legitimate claims"~\parencite[][19]{vredenburgh}
+-> "focus on whether AI compounds injustice, if there is a tradeoff between that value and fairness"~\parencite[][20]{vredenburgh}
+  - "fair decision-making can compound injustice"~\parencite[][19]{vredenburgh}
+  - "not compounding injustice is more important than fairness"~\parencite[][20]{vredenburgh}
+
+
 
 \section*{focus on the policy recommendations she makes for just AI}
 
-
-
 "Take a values-first approach to bias interventions"~\parencite[][20]{vredenburgh}
+- recognize the underlying value behind the goal of mitigating a given bias
+- different values of justice support different standards to measure bias in the system, and support different intervention
+- AI development and deployment should be driven by values, not by data availability
 
 "De-couple decision processes"~\parencite[][22]{vredenburgh}
+- AI can compound injustice across decision processes
+- strong reasons of justice to avoid using the same AI system for a large class of decisions
+
+- Drawbacks:
+  - "reduces the accuracy of decisions, by limiting the input data for building AI systems"
+  - "in many cases data are used to make efficient decisions that are better than choosing at random, not highly accurate decisions"
 
 "Model structural injustice"~\parencite[][23]{vredenburgh}
+- "include information about structural injustice in the decision process, especially for decision-makers that ought to advance justice"
+- be cautious about included features that might support injustice
+- understand where and how to intervene against injustice
 
 "Better data"~\parencite[][24]{vredenburgh}
+- "improve data quality"
+- "Increasing data quality will produce more accurate and robust models"
 
 "Replace decision thresholds with more (weighted) lotteries"~\parencite[][24]{vredenburgh}
-
+- focus on fairness
+- "randomness offers another technical lever to increase fairness"
+- "claim relies on the definition of fairness as the satisfaction of claims in proportion to their relative strength"
+- "fairness requires weighted lotteries for indivisible goods – and, more generally, that claims be satisfied in proportion to their strength"
 
 
 \section*{Which of these recommendations do you find the most important and why}
 
+better data
+
+
+difficult to implement, needs time
+data privacy concerns
+
+
+also solves other problems:
+- much more insight
+  - racism
+  - justice
+  - fairness
+  - bias
+
+
+1 keine Abwägung zwischen value und data availability
+2 no more need to decouple decision processes
+3 more options to model injustice
+4
+5 get data about claims, prio of justice over fairness
+
+
+
+
 \section*{Illustrate what that recommendation would mean in practice by using your own example.}
+
+- dig deep?
+
+- Ausgangslage
+
+- Übergang
+  - Datengenerierung
+  - Datenbeschaffung
+
+- Resultat
 
