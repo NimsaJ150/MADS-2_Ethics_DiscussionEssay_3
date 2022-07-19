@@ -1,84 +1,139 @@
 %! Author = jasmincapka
-%! Date = 31.03.22
+%! Date = 14.07.22
 
-This essay examines the thesis of~\cite{vredenburgh} that the discussion of algorithmic bias should not focus on fairness, but on justice.
+\section*{General debate}
+Imagine the following situation~\parencite[][1-2]{patreon}:
+You are trying to gather public data to conduct an analysis on, but have to rely on web-scraping because the data is not directly available.
+Because of this process, you cannot be sure about the completeness of the data and the validity of the resulting conclusions.
+Then, because of a malicious hack, data including the needed public data for the analysis but also private data suddenly becomes directly available.
 
-\section*{Definition of ``justice" and ``fairness" }
+The question now arises, whether it is appropriate to use data from illicit sources for the planned research.
+Therefore, this discussion focuses on the ethics of using hacked data in data science.
 
-According to~\cite[][3, 11--12]{vredenburgh}, justice is the term for the moral norms that affect fundamental institutions.
-This means, justice prescribes moral commitments about how these important societal institutions should be treating people.
-Moral norms or standards determine the chances, obligations, entitlements or burdens people might have in life.
-Additionally, they create a certain perception of the term justice and shape people's lives.
+Hacked data in this context means "data obtained in an unauthorized manner through illicit access to a computer or computer network"~\parencite[][744]{nature} and, thus, the exploitation of a vulnerability.
+Additionally, this paper assumes that the person potentially using the hacked data is in no way responsible for the extraction of the hacked data.
 
-An example for this would be the German law ``BAföG" which regulates all available federal student grants and loans in Germany.
-The law was issued by the German government, a political institution, with the underlying moral norm of equal opportunity for education regardless of monetary background.
-It has a high impact as it presents the opportunity of good education.
+\section*{Reconstruction of problem}
 
-Fairness, according to~\cite[][3, 13]{vredenburgh}, is based on the moral principle of equality of people as it promotes equal consideration of claims in proportion to the different strengths of individual claims.
+Using hacked data in data science needs ethical considerations, because the "legal and ethical boundaries of using hacked data for research are blurred"~\parencite[][745]{nature}.
+As hacked data is available online, it is in the public domain which makes it per se permissible to use as the usage is not against the law.
 
-In the ``BAföG" example, fairness would mean every student receives grants and loans with respect to the strength of their claims.
-The strength of a claim is given by the individual monetary background of people as defined by justice.
+research integrity is not merely reducible to lawfulness.~\parencite[][745]{nature}
+- use of data compatible with research ethics?
+- Scientists have a social responsibility and
+a moral obligation to consider the ethics of their work beyond mere
+compliance with current regulations
 
-\section*{Argumentation for thesis}
+Current ethical guidance on the use of hacked data for research
+is scarce.~\parencite[][745]{nature}
+- Institutional Review Boards (IRBs) or analogous bodies such as Research Ethics
+Committees
+- competent authorities designated to ensure
+the ethical oversight of research (scientific misconduct and or unethical research)
+- oversight function can be bypassed
 
-\cite{vredenburgh} argues that different technical interventions lead to different values of justice and that a trade-off between fairness and other standards of justice is possible~\parencite[][18]{vredenburgh}.
-Nevertheless, there is not always a trade-off between the two, because in case of serious injustice, fairness is of no value.
-Fairness is dependent on other standards of justice to determine morally alike cases and the question is whether claims are respected in regard to what they are fixed to be by other values of justice~\parencite[][18, 19]{vredenburgh}.
+academic societies and professional associations
+have made an effort to promote best practices~\parencite[][745]{nature}
+- none of these guidance documents directly addresses the hacked data dilemma
+- no general normative guidance provided
 
-This leads to the thesis of~\cite{vredenburgh}, that the important dimension for moral evaluation of algorithms is justice, not fairness.
-Her claim is that ``If the contexts in which AI is designed and deployed are seriously unjust, then one must prioritize other values of justice over fairness"~\parencite[][19]{vredenburgh}.
+Therefore, the question arises, whether, and under which conditions, research using hacked data might be morally justifiable~\parencite[][745]{nature}.
 
-The first reason for this thesis is that fairness does not exist without justice~\parencite[][19]{vredenburgh}.
-The value of fairness can only emerge if it is backed up with just institutions.
-Only when people have legitimate claims, fairness can be an important value.
+\section*{Reconstruction of arguments}
 
-The second argument is that fair decisions may increase injustice if for example they rely on biased input~\parencite[][19]{vredenburgh}.
-In case of a trade-off, the focus should lie on the detection of injustice in a decision process as this is of higher priority than fairness.
+Three paper:
+- focus on own case regarding public data
+- focus on hacked data and
+- general case
 
-\section*{Policy recommendations}
+Pro:
+- Data is public, like a newspaper~\parencite[][5]{patreon}
+  - since the data is already publicly accessible, it can be used the same way as any other publicly accessible data.~\parencite[][23]{acm}
+  - methods and motives are only relevant for evaluating its quality~\parencite[][23]{acm}
+- public value
+  - We hope to serve the public good via our work~\parencite[][5]{patreon}
+  - compensate for harms caused by data breach~\parencite[][745]{nature}
+  - potential benefits to society from utilizing that data outweigh the harms caused by obtaining it~\parencite[][23]{acm}
+- Uniqueness of data~\parencite[][745]{nature}
+  - This is the data we want, but we can’t get it via other methods~\parencite[][5]{patreon}
+  - would not be otherwise attainable using conventional methods.~\parencite[][745]{nature}
+- cross-domain consistency~\parencite[][746]{nature}
+  - hacked data are widely used in other professions such as journalism.~\parencite[][745]{nature}
+- optimization of resources~\parencite[][746]{nature}
+  - using hacked data in research seems to solve an optimization problem captured by the motto ‘once the data are there, we better use them~\parencite[][745]{nature}
+  - doing research that would cost a large amount of resources otherwise~\parencite[][745]{nature}
 
-\cite{vredenburgh} makes five recommendations for just AI:
+Con:
+- Secondary harm~\parencite[][746]{nature}
+  - scientific analysis might cause further harm to data subjects, either individually or on a group level.~\parencite[][746]{nature}
+  - fact the data from a security breach is publicly accessible does not mean using it in research does not create additional risks to those it describes~\parencite[][23]{acm}
+- Privacy breach~\parencite[][746]{nature}
+  - Researchers have a limited capability to distinguish between public and private information within the hacked data.~\parencite[][5]{patreon}
+  - Violating users’ expectation of privacy.~\parencite[][5]{patreon}
+  - May see private data when cleaning the data.~\parencite[][5]{patreon}
+  - although researchers de-identify data before publication, they may have access to personally identifiable information during their analysis owing to identifiers contained in the dataset~\parencite[][746]{nature}
+- Lack of consent~\parencite[][746]{nature}
+  - Using people’s data without consent.~\parencite[][5]{patreon}
+  - scientists not allowed to publish information without explicit and informed consent~\parencite[][745]{nature}
+- Lowering quality standards~\parencite[][746]{nature}
+  - hacked data may be subject to greater risks of bias and lower quality than legitimately obtained data~\parencite[][746]{nature}
+  - Lowering the standards of scientific integrity and research ethics is not simply morally problematic in itself, but may also have a negative effect on the role of science within society~\parencite[][746]{nature}
+  - unethical methods used to obtain the data ‘taints’ both the data itself and any research using it as immoral~\parencite[][24]{acm}
+- We want this data, but we don’t need it. Other data can be ethically collected and used.~\parencite[][5]{patreon}
+  - not mandatory to use this data
+- Perhaps legitimizing criminal activity.~\parencite[][5]{patreon}
+  - grants the methods and those who used them an unacceptable legitimacy as ‘researchers’~\parencite[][24]{acm}
+  - refusing to use such data is an important statement about conducting research ethically and deters researchers from using such methods to obtain data in the future.~\parencite[][24]{acm}
 
-The first recommendation is to recognize the underlying value of justice behind the policy goal for regulation.
-The development of AI should be controlled by this value and not by data availability.
+\section*{Possible framework}
 
-Furthermore, she suggests to ``de-couple decision processes"~\parencite[][22]{vredenburgh}.
-As injustice can be increased amongst several decision processes, the same AI system should not be used for a large class of decisions.
+research using hacked data should
+be deemed unethical, hence impermissible, by default as the direct
+and indirect negative consequences of condoning the use of such
+data in science seem to outweigh the benefits.~\parencite[][747]{nature}
 
-Thirdly, structural injustice should be modelled to incorporate information about injustice in the decision process.
-This can be used to understand whether included features might support injustice as well as where and how to intervene.
+- Uniqueness~\parencite[][747]{nature}
+  - prove that no alternative data collection strategy was viable for their research question
+- Risk-benefit assessment~\parencite[][747]{nature}
+  - high social value, benefits clearly outweigh the harms
+  - processing the hacked data involves no more-than-minimal risk to the data subjects, and
+  - probability and magnitude of harm or discomfort anticipated in the research are no greater than that normally encountered in the data generators’ daily (online) life
+- consent~\parencite[][747]{nature}
+  - researchers must obtain explicit and informed consent from data generators before using the data for research
+  - Processing pseudonymized or anonymized data for scientific purposes may be permissible
+- Traceability~\parencite[][747]{nature}
+  - must provide a record of how and where all data have been obtained.
+- Privacy~\parencite[][747]{nature}
+  - do they have accessed personally identifiable data without consent
+  - what safeguards sre in place to prevent reidentification
+  - how will individuals be informed about insecure data transmission
+  - who is legally responsible
+  - not make repository public
+- IRB approval~\parencite[][748]{nature}
+  - not self assessment
+  - Independent oversight bodies should always determine whether an exception to the unethical-by-default rule should be admitted
+  - ethics review should be mandatory for all
+  - journals should require disclosure statement
 
-Another recommendation focuses on ``better data"~\parencite[][24]{vredenburgh}.
-The aim is to increase the data quality to build more accurate and robust models.
 
-Lastly, the advice is to use more weighted lotteries instead of decision thresholds having a focus on fairness.
-Randomness through weighted lotteries increases fairness for indivisible goods.
+\section*{Eigene Meinung/critical thinking zu solution}
 
-\section*{Importance of recommendation}
+very restrictive approach
+- first three are prerequisites
+- last two are information
 
-In my opinion, the forth recommendation ``better data" is the most important one.
-Even though an enhanced data generation or acquisition process might be difficult to implement and need some time until it pays off, better data also solves other problems:
+not possible to stop it
+- better implement rule not to publish it -> journals do not have to follow
 
-Better data would grant much more insight in decision processes, for example regarding justice, fairness or bias.
-When having better data, the challenge of data availability in the first recommendation could be eased.
-Regarding the second suggestion, the AI could be used for more decision processes without compounding injustice.
-Additionally, better data would lead to more options to model injustice with respect to the third recommendation.
-As for the last point made, data is needed to properly model the strength of claims for a weighted lottery.
+do ethical committees have that much time?
 
-Therefore, better data supports all other recommendations and it is a crucial component in developing AI.
+falls back on:
+Code of ethics not established
+- not only research ethics, but data science ethics
+- data science as own profession not fully included in research
+- Aufnehmen in potential Code of Ethics
+  - not only possible Vorschläge
+- Aufmerksamkeit schaffen
 
-\section*{Recommendation in practice}
 
-Coming back to the example of ``BAföG", the underlying moral norm of equal opportunity for education regardless of monetary background in itself represents justice.
-But it is implemented so that the strict application process through predefined forms leaves no space for the individual consideration for cases of hardship.
-Therefore, in practice, it is not just in that it does not evaluate all students in a way that would give them equal opportunities.
-Nevertheless, this still leads to the application process being fair in that it respects the claims of individual students equally in proportion to their strength, only these strengths being defined in an unjust way.
-
-Currently, a person owning half a house would be considered having a good monetary background without strong claim for funding.
-Putting this into perspective that the person inherited half the house her family is living in, not receiving any monetary benefits, creates injustice.
-According to the moral norm the person should have as strong a funding claim as someone without ground property.
-Inheritance is a general problem with ``BAföG" as the process is not considering the actual benefit of a certain monetary background.
-
-If the government were to collect more and better data about young people and their individual situations, the decision process could be improved by also introducing well-developed AI.
-Surveys could consider additional features to further develop the decision process and maybe even help detect further injustice.
-Constant improvement and adaption of data generation is needed to correctly implement the moral norm of equal opportunity for education and enhance the justice of the decision processes of ``BAföG".
+Rückschluss auf Intro Paper
