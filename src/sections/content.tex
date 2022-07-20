@@ -13,7 +13,7 @@ Additionally, this paper assumes that the person potentially using the hacked da
 
 \section*{Reconstruction of problem}
 
-This section focuses on the background, why using hacked data in data science needs ethical considerations according to~\cite[][745]{nature}:
+This section focuses on the background, why using hacked data in data science needs ethical considerations according to~\textcite[][745]{nature}:
 
 The ``legal and ethical boundaries of using hacked data for research are blurred''~\parencite[][745]{nature}.
 As hacked data is available online, it is in the public domain which makes it per se permissible to use as the usage is not against the law.\\
@@ -30,9 +30,9 @@ Therefore, the question need to be addressed, whether, and under which condition
 \section*{Reconstruction of arguments}
 
 The three most relevant papers that bring arguments in favor of and against the usage of hacked data in data science are:
-\cite{patreon} examine the topic from their own perspective regarding the previously mentioned case.
-\cite{nature} cover the general debate and develop a set of guidelines for the potential usage of hacked data.
-\cite{acm} weights arguments taking the SCM Code of Ethics into account.
+\textcite{patreon} examine the topic from their own perspective regarding the previously mentioned case.
+\textcite{nature} cover the general debate and develop a set of guidelines for the potential usage of hacked data.
+\textcite{acm} weights arguments taking the SCM Code of Ethics into account.
 
 The first argument in favor of the usage is that the data is already public~\parencite[][5]{patreon}.
 Therefore, it can be used analogously to any other publicly accessible data~\parencite[][23]{acm}.
@@ -61,37 +61,26 @@ Other data can be ethically extracted and used, even if that means not analyzing
 Lastly, the usage of hacked data might legitimize criminal activity as ``research''~\parencites[][5]{patreon}[][24]{acm}.
 Therefore, refusing to use hacked data is an important statement about conducting research ethically and sets an example for other data scientists in the future.
 
-\section*{Possible framework}
+\section*{General guidelines}
 
+Considering those arguments,~\textcite{nature} concludes that ``research using hacked data should be deemed unethical, hence impermissible, by default''~\parencite[][747]{nature}, because the potential negative consequences of using hacked data in data science outweigh the benefits.
+Nevertheless, they argue, that in some cases the ``potential scientific benefits of using illicitly obtained data may outweigh [\ldots] the foreseeable harms''~\parencite[][747]{nature}.
+~\textcite[747-748]{nature} propose a formal research ethics assessment and formulate the following six ethical requirements as necessary for legitimately using hacked data in data science.
 
-research using hacked data should
-be deemed unethical, hence impermissible, by default as the direct
-and indirect negative consequences of condoning the use of such
-data in science seem to outweigh the benefits.~\parencite[][747]{nature}
-
-- Uniqueness~\parencite[][747]{nature}
-  - prove that no alternative data collection strategy was viable for their research question
-- Risk-benefit assessment~\parencite[][747]{nature}
-  - high social value, benefits clearly outweigh the harms
-  - processing the hacked data involves no more-than-minimal risk to the data subjects, and
-  - probability and magnitude of harm or discomfort anticipated in the research are no greater than that normally encountered in the data generators’ daily (online) life
-- consent~\parencite[][747]{nature}
-  - researchers must obtain explicit and informed consent from data generators before using the data for research
-  - Processing pseudonymized or anonymized data for scientific purposes may be permissible
-- Traceability~\parencite[][747]{nature}
-  - must provide a record of how and where all data have been obtained.
-- Privacy~\parencite[][747]{nature}
-  - do they have accessed personally identifiable data without consent
-  - what safeguards sre in place to prevent reidentification
-  - how will individuals be informed about insecure data transmission
-  - who is legally responsible
-  - not make repository public
-- IRB approval~\parencite[][748]{nature}
-  - not self assessment
-  - Independent oversight bodies should always determine whether an exception to the unethical-by-default rule should be admitted
-  - ethics review should be mandatory for all
-  - journals should require disclosure statement
-
+THe first requirement is Uniqueness.
+This means proof needs to be provided, that the hacked data could not be retrieved via conventional methods and, thus, that they are of unique value.\\
+Additionally, a risk-benefit assessment needs to be conducted.
+This assessment must show, that an analysis of hacked data would be of high public value, clearly outweighing the anticipated harm, not being more than foreseeable in the daily life.
+The analysis must mean ``no more-than-minimal risk to the data subjects''~\parencite[][747]{nature}.\\
+Furthermore, in case of personally identifiable data the scientists must obtain ``explicit and informed consent'' of the people, the data is about.\\
+In addition , for traceability, a record of how and where all data have been obtained must be provided.\\
+The requirement of privacy includes several aspects.
+Statements regarding the assessment of personally identifiable data without consent, safeguards to prevent re-identification, information in case of insecure data transmission, and legal responsibility need to be provided.
+A repository regarding the analysis of hacked data must not be made public.\\
+Lastly, Institutional Review Board approval is needed.
+This means that the meeting of the prior conditions should not be done via self-assessment.
+Instead, an exception to the initial unethical-by-default rule can only be determined by independent oversight bodies.
+Such an ethics review should be mandatory for any analysis of hacked data and journals should require a disclosure statement about used data before publishing a study.
 
 \section*{Eigene Meinung/critical thinking zu solution}
 
@@ -100,7 +89,7 @@ very restrictive approach
 - last two are information
 
 not possible to stop it
-- better implement rule not to publish it -> journals do not have to follow
+- better implement rule not to publish it like proposed by ACM-> journals do not have to follow
 
 do ethical committees have that much time?
 
