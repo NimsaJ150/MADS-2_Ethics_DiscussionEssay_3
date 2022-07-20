@@ -81,24 +81,30 @@ This means that the meeting of the prior conditions should not be done via self-
 Instead, an exception to the initial unethical-by-default rule can only be determined by independent oversight bodies.
 Such an ethics review should be mandatory for any analysis of hacked data and journals should require a disclosure statement about used data before publishing a study.
 
-\section*{Eigene Meinung/critical thinking zu solution}
+\section*{Evaluation of guidelines}
 
-very restrictive approach
-- first three are prerequisites
-- last two are information
+~\textcite{nature} propose a restrictive approach.
+By default, hacked data should never be used in data science.
+Only in rare cases, when several requirements are met, an exception can be made.
+The first three requirements are prerequisites for using hacked data in data science, the following two about information obligations, followed by the requirement of independent oversight.
 
-not possible to stop it
-- better implement rule not to publish it like proposed by ACM-> journals do not have to follow
+In my opinion, the first requirements, uniqueness, risk-benefit assessment, and consent, are very hard to fulfill.
+It seems difficult to verifiably prove, that the hacked data could not be retrieved by any other way.
+Additionally, it is questionable, whether it is ever possible to correctly assess the risk of the analysis of hacked data.
+On top of that, the term ``minimal risk'' as well as ``benefits clearly outweighing harm'' leave much space for interpretation.
+Furthermore, it seems most challenging to gather consent of all involved people or even debrief those about the usage of private hacked data.\\
+I think the requirements regarding information obligations, traceability and privacy, are easier fulfill.
+Regarding the illicit background of hacked data it is necessary and helpful to provide information on these topics when further processing the data.
+As the required traceability and privacy information is mostly information on conducted procedures by a data scientist himself, it is the description of internal procedures without external dependencies on other parties.\\
+Regarding the requirement of ethical oversight, the question arises whether ethical committees have the resources to externally assess those requirements for all publicly available hacked datasets and data scientists that want to use them.
+I think it is very important that ethical committees assist data scientists in determining whether the conditions are fulfilled, but it cannot be their responsibility alone.
 
-do ethical committees have that much time?
+While I understand, that hacked data should only be used as last resort in an analysis, I think the proposed guidelines are only applicable to very rare cases of hacked data.
+Additionally, despite the proposed, restrictive unethical-by-default rule and the guidelines, the usage of hacked data in data science itself cannot be stopped by them.
+A data scientist is always able to process and analyze publicly available hacked data.
+Only the publishing of his research in journals can be prevented in case a disclosure statement by an ethics committee is required.
 
-falls back on:
-Code of ethics not established
-- not only research ethics, but data science ethics
-- data science as own profession not fully included in research
-- Aufnehmen in potential Code of Ethics
-  - not only possible Vorschläge
-- Aufmerksamkeit schaffen
-
-
-Rückschluss auf Intro Paper
+Therefore, in my opinion, this whole discussion falls back on the establishment of a code of ethics for data science.
+When data science perceives itself as profession and develops a code of ethics, guidelines regarding the use of hacked data can explicitly be included.
+This would transfer proposed guidelines to fixed moral obligations every data scientist would follow and rise awareness for the topic.
+In my opinion, this is the only way to sustain a lasting, cautious treatment of hacked data in data science.
