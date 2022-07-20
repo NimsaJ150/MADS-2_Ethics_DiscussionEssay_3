@@ -1,91 +1,68 @@
 %! Author = jasmincapka
 %! Date = 14.07.22
 
-\section*{General debate}
 Imagine the following situation~\parencite[][1-2]{patreon}:
 You are trying to gather public data to conduct an analysis on, but have to rely on web-scraping because the data is not directly available.
 Because of this process, you cannot be sure about the completeness of the data and the validity of the resulting conclusions.
 Then, because of a malicious hack, data including the needed public data for the analysis but also private data suddenly becomes directly available.
 
 The question now arises, whether it is appropriate to use data from illicit sources for the planned research.
-Therefore, this discussion focuses on the ethics of using hacked data in data science.
-
-Hacked data in this context means "data obtained in an unauthorized manner through illicit access to a computer or computer network"~\parencite[][744]{nature} and, thus, the exploitation of a vulnerability.
+Therefore, this discussion focuses on the ethics of using hacked data in data science.\\
+Hacked data in this context means ``data obtained in an unauthorized manner through illicit access to a computer or computer network''~\parencite[][744]{nature} and, thus, the exploitation of a vulnerability.
 Additionally, this paper assumes that the person potentially using the hacked data is in no way responsible for the extraction of the hacked data.
 
 \section*{Reconstruction of problem}
 
-Using hacked data in data science needs ethical considerations, because the "legal and ethical boundaries of using hacked data for research are blurred"~\parencite[][745]{nature}.
-As hacked data is available online, it is in the public domain which makes it per se permissible to use as the usage is not against the law.
+This section focuses on the background, why using hacked data in data science needs ethical considerations according to~\cite[][745]{nature}:
 
-research integrity is not merely reducible to lawfulness.~\parencite[][745]{nature}
-- use of data compatible with research ethics?
-- Scientists have a social responsibility and
-a moral obligation to consider the ethics of their work beyond mere
-compliance with current regulations
+The ``legal and ethical boundaries of using hacked data for research are blurred''~\parencite[][745]{nature}.
+As hacked data is available online, it is in the public domain which makes it per se permissible to use as the usage is not against the law.\\
+Still, only because it is legally permissible, it does not account for the social responsibility of scientists and their moral obligations.
+It has to be determined, whether the use of hacked data is compatible with research ethics.\\
+Currently, there is few ``ethical guidance on the use of hacked data for research''~\parencite[][745]{nature}.
+There are Institutional Review Boards or similar bodies such as Research Ethics Committees to ensure ethical research regarding personal data and prevent scientific misconduct.
+Still, their oversight function can be bypassed.\\
+There has been some effort to define best practices among researches, but the usage of hacked data has not yet been addressed directly.
+This means, no general normative guidance is provided.
 
-Current ethical guidance on the use of hacked data for research
-is scarce.~\parencite[][745]{nature}
-- Institutional Review Boards (IRBs) or analogous bodies such as Research Ethics
-Committees
-- competent authorities designated to ensure
-the ethical oversight of research (scientific misconduct and or unethical research)
-- oversight function can be bypassed
-
-academic societies and professional associations
-have made an effort to promote best practices~\parencite[][745]{nature}
-- none of these guidance documents directly addresses the hacked data dilemma
-- no general normative guidance provided
-
-Therefore, the question arises, whether, and under which conditions, research using hacked data might be morally justifiable~\parencite[][745]{nature}.
+Therefore, the question need to be addressed, whether, and under which conditions, research using hacked data might be morally justifiable~\parencite[][745]{nature}.
 
 \section*{Reconstruction of arguments}
 
-Three paper:
-- focus on own case regarding public data
-- focus on hacked data and
-- general case
+The three most relevant papers that bring arguments in favor of and against the usage of hacked data in data science are:
+\cite{patreon} examine the topic from their own perspective regarding the previously mentioned case.
+\cite{nature} cover the general debate and develop a set of guidelines for the potential usage of hacked data.
+\cite{acm} weights arguments taking the SCM Code of Ethics into account.
 
-Pro:
-- Data is public, like a newspaper~\parencite[][5]{patreon}
-  - since the data is already publicly accessible, it can be used the same way as any other publicly accessible data.~\parencite[][23]{acm}
-  - methods and motives are only relevant for evaluating its quality~\parencite[][23]{acm}
-- public value
-  - We hope to serve the public good via our work~\parencite[][5]{patreon}
-  - compensate for harms caused by data breach~\parencite[][745]{nature}
-  - potential benefits to society from utilizing that data outweigh the harms caused by obtaining it~\parencite[][23]{acm}
-- Uniqueness of data~\parencite[][745]{nature}
-  - This is the data we want, but we can’t get it via other methods~\parencite[][5]{patreon}
-  - would not be otherwise attainable using conventional methods.~\parencite[][745]{nature}
-- cross-domain consistency~\parencite[][746]{nature}
-  - hacked data are widely used in other professions such as journalism.~\parencite[][745]{nature}
-- optimization of resources~\parencite[][746]{nature}
-  - using hacked data in research seems to solve an optimization problem captured by the motto ‘once the data are there, we better use them~\parencite[][745]{nature}
-  - doing research that would cost a large amount of resources otherwise~\parencite[][745]{nature}
+The first argument in favor of the usage is that the data is already public~\parencite[][5]{patreon}.
+Therefore, it can be used analogously to any other publicly accessible data~\parencite[][23]{acm}.
+The illegality of its release would then be only relevant for evaluating the data quality.\\
+Another argument is ``cross-domain consistency''~\parencite[][746]{nature}.
+As hacked data is used in other professions like journalism, it should be usable in data science as well~\parencite[][745]{nature}.\\
+Additionally, the data is of public value, meaning, an analysis can serve the public good and compensate for harms of a data breach~\parencites[][5]{patreon}[][23]{acm}.
+In this case, the potential public benefits from using hacked data outweigh the harms caused by retrieving it~\parencite[][23]{acm}.\\
+Furthermore, the data has a unique character as it may not be retrievable via any other conventional method in terms of accuracy and amount of data~\parencites[][745]{nature}[][5]{patreon}.\\
+Lastly, even if the data could be attained otherwise, using hacked data is an ``optimization of resources''~\parencite[][746]{nature}.
+Otherwise doing the same research would cost a large amount of resources for conventionally extracting data that is already publicly available~\parencite[][745]{nature}.
 
-Con:
-- Secondary harm~\parencite[][746]{nature}
-  - scientific analysis might cause further harm to data subjects, either individually or on a group level.~\parencite[][746]{nature}
-  - fact the data from a security breach is publicly accessible does not mean using it in research does not create additional risks to those it describes~\parencite[][23]{acm}
-- Privacy breach~\parencite[][746]{nature}
-  - Researchers have a limited capability to distinguish between public and private information within the hacked data.~\parencite[][5]{patreon}
-  - Violating users’ expectation of privacy.~\parencite[][5]{patreon}
-  - May see private data when cleaning the data.~\parencite[][5]{patreon}
-  - although researchers de-identify data before publication, they may have access to personally identifiable information during their analysis owing to identifiers contained in the dataset~\parencite[][746]{nature}
-- Lack of consent~\parencite[][746]{nature}
-  - Using people’s data without consent.~\parencite[][5]{patreon}
-  - scientists not allowed to publish information without explicit and informed consent~\parencite[][745]{nature}
-- Lowering quality standards~\parencite[][746]{nature}
-  - hacked data may be subject to greater risks of bias and lower quality than legitimately obtained data~\parencite[][746]{nature}
-  - Lowering the standards of scientific integrity and research ethics is not simply morally problematic in itself, but may also have a negative effect on the role of science within society~\parencite[][746]{nature}
-  - unethical methods used to obtain the data ‘taints’ both the data itself and any research using it as immoral~\parencite[][24]{acm}
-- We want this data, but we don’t need it. Other data can be ethically collected and used.~\parencite[][5]{patreon}
-  - not mandatory to use this data
-- Perhaps legitimizing criminal activity.~\parencite[][5]{patreon}
-  - grants the methods and those who used them an unacceptable legitimacy as ‘researchers’~\parencite[][24]{acm}
-  - refusing to use such data is an important statement about conducting research ethically and deters researchers from using such methods to obtain data in the future.~\parencite[][24]{acm}
+In contrast to those arguments, using hacked data in data science might cause secondary harm~\parencites[][746]{nature}[23]{acm}.
+The condition of hacked data being publicly available does not eliminate the potential of additional risks through further analysis.
+Research might still cause further harm to people, either individually or on a group level.\\
+Furthermore, using hacked data is a violation of the expectation of privacy of the people, the data is about~\parencite[][5]{patreon}.
+There is only limited ability to differentiate between public and private, personally identifiable information within hacked data.
+This makes it impossible to respect data privacy although the data is de-identified before publication~\parencite[][746]{nature}.\\
+In addition, ``scientists [are] not allowed to publish information without explicit and informed consent''~\parencite[][745]{nature}.
+As consent is missing in case of hacked data, using hacked data would be using people's data without consent~\parencite[][5]{patreon}.\\
+Another argument is that hacked data might be biased or of lower quality than legitimately obtained data~\parencite[][746]{nature}.
+This might lead to a lowering of scientific standards regarding integrity and research ethics and have a negative effect on the perception of science by society.
+Unethical methods used to attain hacked data might mark any research using it as unethical~\parencite[][24]{acm}.\\
+Additionally, the using hacked data is not mandatory~\parencite[][5]{patreon}.
+Other data can be ethically extracted and used, even if that means not analyzing a certain topic at all or researching from a different perspective.\\
+Lastly, the usage of hacked data might legitimize criminal activity as ``research''~\parencites[][5]{patreon}[][24]{acm}.
+Therefore, refusing to use hacked data is an important statement about conducting research ethically and sets an example for other data scientists in the future.
 
 \section*{Possible framework}
+
 
 research using hacked data should
 be deemed unethical, hence impermissible, by default as the direct
