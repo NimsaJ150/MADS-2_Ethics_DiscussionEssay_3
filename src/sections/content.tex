@@ -2,12 +2,12 @@
 %! Date = 14.07.22
 
 Imagine the following situation~\parencite[][1-2]{patreon}:
-You are trying to gather public data to conduct an analysis on, but have to rely on web-scraping because the data is not directly available.
-Because of this process, you cannot be sure about the completeness of the data and the validity of the resulting conclusions.
-Then, because of a malicious hack, data including the needed public data for the analysis but also private data suddenly becomes directly available.
+You are trying to gather public data to conduct an analysis on but have to rely on web-scraping because the data is not directly available.
+Therefore, you cannot be sure about the completeness of the data and the validity of the resulting conclusions.
+Then, resulting from a malicious hack, data including the needed public data for the analysis but also private data suddenly become directly available.
 
 The question now arises, whether it is appropriate to use data from illicit sources for the planned research.
-Therefore, this discussion focuses on the ethics of using hacked data in data science.\\
+Subsequently, this discussion focuses on the ethics of using hacked data in data science.\\
 Hacked data in this context means ``data obtained in an unauthorized manner through illicit access''~\parencite[][744]{nature}.
 Additionally, this paper assumes that the person potentially using the hacked data is in no way responsible for the extraction of the hacked data.
 
@@ -17,19 +17,19 @@ This section focuses on the background, why using hacked data in data science ne
 
 The ``legal and ethical boundaries of using hacked data for research are blurred''~\parencite[][745]{nature}.
 As hacked data is available online, it is in the public domain which makes it per se permissible to use as the usage is not against the law.\\
-Still, only because it is legally permissible, it does not account for the social responsibility of scientists and their moral obligations.
-It has to be determined, whether the use of hacked data is compatible with research ethics.\\
-Currently, there is few ``ethical guidance on the use of hacked data for research''~\parencite[][745]{nature}.
+Still, simply because it is legally permissible, it does not account for the social responsibility of scientists and their moral obligations.
+It must be determined, whether the use of hacked data is compatible with research ethics.\\
+Currently, there is little ``ethical guidance on the use of hacked data for research''~\parencite[][745]{nature}.
 There are Institutional Review Boards or similar bodies such as Research Ethics Committees to ensure ethical research regarding personal data and prevent scientific misconduct.
-Still, their oversight function can be bypassed.\\
-There has been some effort to define best practices among researches, but the usage of hacked data has not yet been addressed directly.
+Still, their supervision function can be bypassed.\\
+There has been some effort to define best practices among researchers, but the usage of hacked data has not yet been addressed directly.
 This means, no general normative guidance is provided.
 
 Therefore, the question needs to be addressed, whether, and under which conditions, research using hacked data might be morally justifiable~\parencite[][745]{nature}.
 
 \section*{Reconstruction of arguments}
 
-The three most relevant papers that bring arguments in favor of and against the usage of hacked data in data science are:
+The three most relevant papers that bring arguments in favor of and against the usage of hacked data in data science are the following:
 \textcite{patreon} examine the topic from their own perspective regarding the previously mentioned case.
 \textcite{nature} cover the general debate and develop a set of guidelines for the potential usage of hacked data.
 \textcite{acm} weights arguments, taking the ACM Code of Ethics into account.
@@ -41,19 +41,19 @@ Another argument is ``cross-domain consistency''~\parencite[][746]{nature}.
 As hacked data is used in other professions like journalism, it should be usable in data science as well~\parencite[][745]{nature}.\\
 Additionally, the data is of public value, meaning, an analysis can serve the public good and compensate for harms of a data breach~\parencites[][5]{patreon}[][23]{acm}.
 In this case, the potential public benefits from using hacked data outweigh the harms caused by retrieving it~\parencite[][23]{acm}.\\
-Furthermore, the data has a unique character as it may not be retrievable via any other conventional method in terms of accuracy and amount of data~\parencites[][745]{nature}[][5]{patreon}.\\
+Furthermore, the data has a unique character as it may not be retrievable through any other conventional method in terms of accuracy and amount of data~\parencites[][745]{nature}[][5]{patreon}.\\
 Lastly, even if the data could be attained otherwise, using hacked data is an ``optimization of resources''~\parencite[][746]{nature}.
-Otherwise, doing the same research would cost a large amount of resources for conventionally extracting data that is already publicly available~\parencite[][745]{nature}.
+Otherwise, doing the same research would cost a large number of resources for conventionally extracting data that is already publicly available~\parencite[][745]{nature}.
 
-In contrast to those arguments, using hacked data in data science might cause secondary harm to people, either individually or on a group level.~\parencites[][746]{nature}[23]{acm}.
+In contrast to those arguments, using hacked data in data science might cause secondary harm to people, either individually or on a group level~\parencites[][746]{nature}[23]{acm}.
 The condition of hacked data being publicly available does not eliminate the potential of additional risks through further analysis.\\
-Furthermore, using hacked data is a violation of the expectation of privacy of the people, the data is about~\parencite[][5]{patreon}.
+Furthermore, using hacked data is a violation of the expectation of privacy of the people, the data is affecting~\parencite[][5]{patreon}.
 There is only limited ability to differentiate between public and private, personally identifiable information within hacked data.
-This makes it impossible to respect data privacy even if the data is de-identified before publication~\parencite[][746]{nature}.\\
+This makes it hardly possible to respect data privacy even if the data is de-identified before publication~\parencite[][746]{nature}.\\
 In addition, ``scientists [are] not allowed to publish information without explicit and informed consent''~\parencite[][745]{nature}.
-As consent is missing in case of hacked data, using hacked data would be using people's data without consent~\parencite[][5]{patreon}.\\
+As consent is generally missing in case of hacked data, using hacked data would be using people's data without consent~\parencite[][5]{patreon}.\\
 Another argument is that hacked data might be biased or of lower quality than legitimately obtained data~\parencite[][746]{nature}.
-This might lead to a lowering of scientific standards regarding integrity and research ethics and can have a negative effect on the perception of science by society.
+This might lead to a lowering of scientific standards regarding integrity and research ethics and can negatively effect the perception of science by society.
 Unethical methods used to attain hacked data might mark any research using it as unethical~\parencite[][24]{acm}.\\
 Additionally, the usage of hacked data is not mandatory~\parencite[][5]{patreon}.
 Other data can be ethically extracted and used, even if that means not analyzing a certain topic at all or researching from a different perspective.\\
@@ -89,22 +89,22 @@ Only in rare cases, when several requirements are met, an exception can be made.
 The first three requirements are prerequisites for using hacked data in data science, the following two about information obligations, followed by the requirement of independent oversight.
 
 In my opinion, the first requirements, uniqueness, risk-benefit assessment, and consent, are very hard to fulfill.
-It seems difficult to verifiably prove, that the hacked data could not be retrieved by any other way.
+It seems difficult to verifiably prove, that the hacked data could not be retrieved in any other way.
 Additionally, it is questionable, whether it is ever possible to correctly assess the risk of the analysis of hacked data.
 On top of that, the term ``minimal risk'' as well as ``benefits clearly outweighing harm'' leave much space for interpretation.
-Furthermore, it seems most challenging to gather consent of all involved people or even debrief those about the usage of private hacked data.\\
-I think the requirements regarding information obligations, traceability and privacy, are easier fulfill.
-Regarding the illicit background of hacked data it is necessary and helpful to provide information on these topics when further processing the data.
-As the required traceability and privacy information is mostly information on conducted procedures by a data scientist himself, it is the description of internal procedures without external dependencies on other parties.\\
-Regarding the requirement of ethical oversight, the question arises whether ethical committees have the resources to externally assess those requirements for all publicly available hacked datasets and data scientists that want to use them.
+Furthermore, it seems most challenging to gather consent from all involved people or even debrief those about the usage of private hacked data.\\
+I think the requirements regarding information obligations, traceability, and privacy, are easier fulfill.
+Regarding the illicit background of hacked data, it is necessary and helpful to provide information on these topics when further processing the data.
+As the required traceability and privacy information is mostly information on conducted procedures by a data scientist herself, it is the description of internal procedures without external dependencies on other parties.\\
+Regarding the requirement of ethical supervision, the question arises whether ethical committees have the resources to externally assess those requirements for all publicly available hacked datasets and data scientists that want to use them.
 I think it is very important that ethical committees assist data scientists in determining whether the conditions are fulfilled, but it cannot be their responsibility alone.
 
-While I understand, that hacked data should only be used as last resort in an analysis, I think the proposed guidelines are only applicable to very rare cases of hacked data.
+While I understand, that hacked data should only be used as a last resort in an analysis, I think the proposed guidelines are only applicable to very rare cases of hacked data.
 Additionally, despite the proposed, restrictive unethical-by-default rule and the guidelines, the usage of hacked data in data science itself cannot be stopped by them.
 A data scientist is always able to process and analyze publicly available hacked data.
-Only the publishing of his research in journals can be prevented in case a disclosure statement by an ethics committee is required.
+Only the publishing of her research in journals can be prevented in case a disclosure statement by an ethics committee is required.
 
 Therefore, in my opinion, this whole discussion falls back on the establishment of a code of ethics for data science.
 When data science perceives itself as profession and develops a code of ethics, guidelines regarding the use of hacked data can explicitly be included.
-This would transfer proposed guidelines to fixed moral obligations every data scientist would follow and rise awareness for the topic.
-In my opinion, this is the only way to sustain a lasting, cautious treatment of hacked data in data science.
+This would transfer proposed guidelines to fixed moral obligations every data scientist would follow and raise awareness of the topic.
+In my opinion, this is the only way to sustain a sustainable and responsible treatment of hacked data in data science.
